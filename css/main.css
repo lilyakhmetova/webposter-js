@@ -2,5 +2,97 @@
 
 body {
   background: black;
-  
+  overflow: hidden;
+}
+/*
+.tornpaper {
+  width: 100vw;
+  height: 100vw;
+  background: url(../img/tornpaper.gif) no-repeat;
+} */
+
+.wrinklepaper {
+  width: 60vw;
+  position: absolute;
+  margin-top: -10vw;
+  left: -4vw;
+
+}
+
+.tornpaper {
+  width: 40vw;
+  position: absolute;
+  margin-top: 10vw;
+  margin-bottom: 2vw;
+  right: 2vw;
+}
+
+@font-face {
+ font-family: 'Gotham Pro';
+ font-weight: normal;
+
+ src: url(../fonts/GothamPro-Light.ttf)
+ format('truetype');
+}
+
+@font-face {
+ font-family: 'Druk Text Wide Cyr';
+ font-weight: 900;
+
+ src: url(../fonts/DrukTextWideCyrSuper.otf)
+ format('opentype');
+}
+
+h1 {
+  font-family: 'Gotham Pro';
+  color: #FFFFFF;
+  font-size: 30px;
+  line-height: 29px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 1;
+  margin-right: 3vw;
+  margin-top: 3vw;
+}
+
+.purple {
+  width: 40vw;
+  position: absolute;
+  margin-top: -4vw;
+}
+
+.red {
+  width: 50vw;
+  position: absolute;
+  right: -2vw;
+  top: 0vw;
+}
+
+.redpiece {
+  width: 60vw;
+  position: absolute;
+  top: 0vw;
+}
+
+.redpiece2 {
+  width: 25vw;
+  position: absolute;
+  top: 5vw;
+  right: 15vw;
+}
+
+.purplepiece {
+  width: 25vw;
+  position: absolute;
+  bottom: 0vw;
+  left: 2vw;
+}
+
+.purplepiece2 {
+  width: 25vw;
+  position: absolute;
+  bottom: 0vw;
+  right: 2vw;
+  fill: yellow;
 }
