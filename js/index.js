@@ -52,7 +52,7 @@ let spiderAnimation = anime({
   targets: '.spider path',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutSine',
-  duration: 8000,
+  duration: 7000,
   delay: function(el, i) { return i * 250 },
   direction: 'alternate',
   autoplay: false,
@@ -61,3 +61,23 @@ let spiderAnimation = anime({
 
 let severalPieces= document.querySelector('.yellowpieces')
 severalPieces.onmouseenter = spiderAnimation.play
+
+let bluePiecesAnimation = anime({
+  targets: '.bluepieces',
+  keyframes: [
+      {translateY: '0.1vw'},
+      {translateY: '0vw'},
+    ],
+    duration: 3000,
+    loop: true
+});
+
+let yellowPiecesAnimation = anime({
+  targets: '.yellowpieces',
+  keyframes: [
+      {translateX: '0.2vw'},
+      {translateX: '0vw'},
+    ],
+    duration: 2500,
+    loop: true
+});
