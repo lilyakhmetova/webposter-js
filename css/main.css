@@ -59,7 +59,8 @@ h1 {
 .purple {
   width: 40vw;
   position: absolute;
-  margin-top: -4vw;
+  margin-top: -6vw;
+  left: -5vw;
 }
 
 .red {
@@ -94,5 +95,34 @@ h1 {
   position: absolute;
   bottom: 0vw;
   right: 2vw;
-  fill: yellow;
+}
+
+.severalpieces {
+  width: 100vw;
+  height: 120vh;
+  z-index: 1;
+  position: absolute;
+  margin-top: -10vw;
+}
+
+.bluepieces {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  top: -2vw;
+  left: -2vw;
+}
+
+.yellowpieces {
+  position: absolute;
+  z-index: 1;
+  width: 70vw;
+  top: 0vw;
+  right: 0vw;
+}
+
+.spider {
+  position: absolute;
+  z-index: 1;
+  top: -2vw;
 }
