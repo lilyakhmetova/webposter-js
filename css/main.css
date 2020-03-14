@@ -12,17 +12,16 @@ body {
 } */
 
 .wrinklepaper {
-  width: 60vw;
+  width: 50vw;
   position: absolute;
   margin-top: -10vw;
-  left: -4vw;
-
+  left: 25vw;
 }
 
 .tornpaper {
-  width: 40vw;
+  width: 30vw;
   position: absolute;
-  margin-top: 10vw;
+  margin-top: 20vw;
   margin-bottom: 2vw;
   right: 2vw;
 }
@@ -54,7 +53,14 @@ h1 {
   z-index: 1;
   margin-right: 3vw;
   margin-top: 3vw;
+  user-select: none;
+  transition: 400ms all ease;
 }
+/*
+h1:hover {
+  color: #FF4B41;
+  animation:
+} */
 
 .purple {
   width: 40vw;
@@ -95,6 +101,8 @@ h1 {
   position: absolute;
   bottom: 0vw;
   right: 2vw;
+  touch-action: none;
+  user-select: none;
 }
 
 .severalpieces {
@@ -118,11 +126,108 @@ h1 {
   z-index: 1;
   width: 70vw;
   top: 0vw;
-  right: 0vw;
+  right: -2vw;
 }
 
 .spider {
   position: absolute;
+  width: 46vw;
   z-index: 1;
   top: -2vw;
+}
+
+.bluepiece {
+  width: 60vw;
+  position: absolute;
+  top: 0vw;
+  left: -25vw;
+}
+
+.redpiece3 {
+  width: 60vw;
+  position: absolute;
+  top: 5vw;
+  left: -5vw;
+}
+
+.yellowpiece {
+  width: 60vw;
+  position: absolute;
+  top: 35vw;
+  left: -5vw;
+}
+
+.yellowpiece2 {
+  width: 60vw;
+  position: absolute;
+  top: 10vw;
+  right: -10vw;
+}
+
+.purplepiece3 {
+  width: 60vw;
+  position: absolute;
+  bottom: -5vw;
+  right: 10vw;
+}
+
+.snake {
+  position: absolute;
+  width: 40vw;
+  z-index: 1;
+  bottom: -2vw;
+  right: -4vw;
+}
+
+.field {
+  position: absolute;
+  width: 44vw;
+  z-index: 1;
+  bottom: 0vw;
+  left: -4vw;
+}
+
+
+.dontwant {
+  position: absolute;
+  width: 25vw;
+  z-index: 1;
+  bottom: -2vw;
+  right: 23vw;
+}
+
+.fear {
+  position: absolute;
+  width: 45vw;
+  z-index: 1;
+  top: 2vw;
+  left: 12vw;
+}
+
+.dontwant2 {
+  position: absolute;
+  width: 45vw;
+  z-index: 1;
+  top: 25vw;
+  right: 23vw;
+}
+
+.sticker1 {
+  position: absolute;
+  width: 40vw;
+  top: -8vw;
+}
+
+
+.sticker2 {
+  position: absolute;
+  width: 45vw;
+  left: 20vw;
+}
+
+.sticker3 {
+  position: absolute;
+  width: 45vw;
+  bottom: -10vw;
+
 }

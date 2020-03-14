@@ -37,6 +37,10 @@ let redPiece2Animation = anime({
     duration: 2000,
     loop: true
 });
+// 
+// document.querySelector('.redpiece2 path').onclick = function() {
+//   document.querySelector('.redpiece2 path').style.fill = 'white'
+// }
 
 let purplePieceAnimation = anime({
   targets: '.purplepiece',
@@ -48,6 +52,7 @@ let purplePieceAnimation = anime({
     loop: true
 });
 
+
 let spiderAnimation = anime({
   targets: '.spider path',
   strokeDashoffset: [anime.setDashoffset, 0],
@@ -55,12 +60,14 @@ let spiderAnimation = anime({
   duration: 7000,
   delay: function(el, i) { return i * 250 },
   direction: 'alternate',
-  autoplay: false,
+  // autoplay: false,
   loop: true
 });
 
-let severalPieces= document.querySelector('.yellowpieces')
-severalPieces.onmouseenter = spiderAnimation.play
+
+
+// let yellowPieces = document.querySelector('.yellowpieces')
+// yellowPieces.onmouseenter = spiderAnimation.play
 
 let bluePiecesAnimation = anime({
   targets: '.bluepieces',
@@ -81,3 +88,76 @@ let yellowPiecesAnimation = anime({
     duration: 2500,
     loop: true
 });
+
+
+let snakeAnimation = anime({
+  targets: '.snake path',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 7000,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true
+});
+//
+// document.querySelector('.redpiece').onmouseenter = snakeAnimation.play
+
+let fieldAnimation = anime({
+  targets: '.field path',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 7000,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true
+});
+//
+// document.querySelector('.spider').onmouseenter = spiderAnimation.play
+
+let dontWantAnimation = anime({
+  targets: '.dontwant path',
+  strokeDashoffset: [anime.setDashoffset, 5000],
+  easing: 'easeInOutSine',
+  duration: 5000,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true
+});
+
+let fearAnimation = anime({
+  targets: '.fear path',
+  strokeDashoffset: [anime.setDashoffset, 2000],
+  easing: 'easeInOutSine',
+  duration: 5000,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true
+});
+
+let dontWant2Animation = anime({
+  targets: '.dontwant2 path',
+  strokeDashoffset: [anime.setDashoffset, 2000],
+  easing: 'easeInOutSine',
+  duration: 5000,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true
+});
+
+//
+// const position = { x: 0, y: 0 }
+//
+// let dragFunction = interact('.purplepiece2').draggable({
+//   listeners: {
+//     start (event) {
+//       console.log(event.type, event.target)
+//     },
+//     move (event) {
+//       position.x += event.dx
+//       position.y += event.dy
+//
+//       event.target.style.transform =
+//         `translate(${position.x}px, ${position.y}px)`
+//     },
+//   }
+// })
