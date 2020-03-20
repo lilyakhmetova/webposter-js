@@ -101,8 +101,6 @@ h1:hover {
   position: absolute;
   bottom: 0vw;
   right: 2vw;
-  touch-action: none;
-  user-select: none;
 }
 
 .severalpieces {
@@ -144,17 +142,17 @@ h1:hover {
 }
 
 .redpiece3 {
-  width: 60vw;
+  width: 70vw;
   position: absolute;
   top: 5vw;
-  left: -5vw;
+  left: 5vw;
 }
 
 .yellowpiece {
   width: 60vw;
   position: absolute;
   top: 35vw;
-  left: -5vw;
+  left: -10vw;
 }
 
 .yellowpiece2 {
@@ -165,9 +163,9 @@ h1:hover {
 }
 
 .purplepiece3 {
-  width: 60vw;
+  width: 70vw;
   position: absolute;
-  bottom: -5vw;
+  bottom: -6vw;
   right: 10vw;
 }
 
@@ -216,6 +214,9 @@ h1:hover {
   position: absolute;
   width: 40vw;
   top: -8vw;
+
+  touch-action: none;
+  user-select: none;
 }
 
 
@@ -223,11 +224,52 @@ h1:hover {
   position: absolute;
   width: 45vw;
   left: 20vw;
+
+  touch-action: none;
+  user-select: none;
 }
 
 .sticker3 {
   position: absolute;
   width: 45vw;
   bottom: -10vw;
+
+  touch-action: none;
+  user-select: none;
+}
+
+
+.notafraid {
+  position: absolute;
+  z-index: 1;
+  width: 45vw;
+  top: 13vw;
+  left: 20vw;
+}
+
+.purplepiece4 {
+  position: absolute;
+  width: 40vw;
+  z-index: 1;
+  top: 26vw;
+  right: 5vw;
+
+  touch-action: none;
+  user-select: none;
+}
+
+.war {
+  position: absolute;
+  width: 45vw;
+  z-index: 1;
+  top: 25vw;
+  right: 23vw;
+}
+
+.displayblue {
+  width: 60vw;
+  position: absolute;
+  top: 0vw;
+  left: -25vw;
 
 }

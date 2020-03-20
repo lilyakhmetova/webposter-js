@@ -37,7 +37,7 @@ let redPiece2Animation = anime({
     duration: 2000,
     loop: true
 });
-// 
+//
 // document.querySelector('.redpiece2 path').onclick = function() {
 //   document.querySelector('.redpiece2 path').style.fill = 'white'
 // }
@@ -97,10 +97,15 @@ let snakeAnimation = anime({
   duration: 7000,
   delay: function(el, i) { return i * 250 },
   direction: 'alternate',
+  // autoplay: false,
   loop: true
 });
-//
-// document.querySelector('.redpiece').onmouseenter = snakeAnimation.play
+
+
+// document.querySelector('.red').onmouseenter = () => {
+//   snakeAnimation.play
+//   dontWantAnimation.play
+// }
 
 let fieldAnimation = anime({
   targets: '.field path',
@@ -109,10 +114,11 @@ let fieldAnimation = anime({
   duration: 7000,
   delay: function(el, i) { return i * 250 },
   direction: 'alternate',
+  // autoplay: false,
   loop: true
 });
 //
-// document.querySelector('.spider').onmouseenter = spiderAnimation.play
+// document.querySelector('.purple').onmouseenter = fieldAnimation.play
 
 let dontWantAnimation = anime({
   targets: '.dontwant path',
@@ -121,18 +127,22 @@ let dontWantAnimation = anime({
   duration: 5000,
   delay: function(el, i) { return i * 250 },
   direction: 'alternate',
+  // autoplay: false,
   loop: true
 });
 
-let fearAnimation = anime({
-  targets: '.fear path',
-  strokeDashoffset: [anime.setDashoffset, 2000],
-  easing: 'easeInOutSine',
-  duration: 5000,
-  delay: function(el, i) { return i * 250 },
-  direction: 'alternate',
-  loop: true
-});
+// let fearAnimation = anime({
+//   targets: '.fear path',
+//   strokeDashoffset: [anime.setDashoffset, 2000],
+//   easing: 'easeInOutSine',
+//   duration: 5000,
+//   delay: function(el, i) { return i * 250 },
+//   direction: 'alternate',
+//   loop: true
+// });
+//
+// document.querySelector('.red').onmouseenter = dontWantAnimation.play
+
 
 let dontWant2Animation = anime({
   targets: '.dontwant2 path',
@@ -143,6 +153,45 @@ let dontWant2Animation = anime({
   direction: 'alternate',
   loop: true
 });
+
+let notAfraidAnimation = anime({
+  targets: '.notafraid path',
+  strokeDashoffset: [anime.setDashoffset, 2000],
+  easing: 'easeInOutSine',
+  duration: 5000,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true
+});
+
+let warAnimation = anime({
+  targets: '.war path',
+  strokeDashoffset: [anime.setDashoffset, 1000],
+  easing: 'easeInOutSine',
+  duration: 4000,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  // autoplay: false,
+  loop: true
+});
+
+
+document.querySelector('.bluepiece path').onmouseenter = function() {
+  document.querySelector('.bluepiece path').style.display = `none`
+}
+document.querySelector('.redpiece3 path').onmouseenter = function() {
+  document.querySelector('.redpiece3 path').style.display = `none`
+}
+document.querySelector('.yellowpiece path').onmouseenter = function() {
+  document.querySelector('.yellowpiece path').style.display = `none`
+}
+document.querySelector('.yellowpiece2 path').onmouseenter = function() {
+  document.querySelector('.yellowpiece2 path').style.display = `none`
+}
+
+
+
+
 
 //
 // const position = { x: 0, y: 0 }
