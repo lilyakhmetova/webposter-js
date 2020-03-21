@@ -3,6 +3,8 @@
 body {
   background: black;
   overflow: hidden;
+  margin: 0;
+
 }
 /*
 .tornpaper {
@@ -51,10 +53,11 @@ h1 {
   justify-content: flex-end;
   align-items: flex-end;
   z-index: 1;
-  margin-right: 3vw;
+  margin-right: 4vw;
   margin-top: 3vw;
   user-select: none;
-  transition: 400ms all ease;
+  text-align: right;
+
 }
 /*
 h1:hover {
@@ -66,13 +69,13 @@ h1:hover {
   width: 40vw;
   position: absolute;
   margin-top: -6vw;
-  left: -5vw;
+  left: -8vw;
 }
 
 .red {
-  width: 50vw;
+  width: 60vw;
   position: absolute;
-  right: -2vw;
+  right: -8vw;
   top: 0vw;
 }
 
@@ -191,7 +194,7 @@ h1:hover {
   width: 25vw;
   z-index: 1;
   bottom: -2vw;
-  right: 23vw;
+  right: 20vw;
 }
 
 .fear {
@@ -266,10 +269,13 @@ h1:hover {
   right: 23vw;
 }
 
-.displayblue {
-  width: 60vw;
-  position: absolute;
-  top: 0vw;
-  left: -25vw;
+
+
+@media (min-width: 1500px) {
+
+  .war {
+    top: 35vw;
+  }
+
 
 }

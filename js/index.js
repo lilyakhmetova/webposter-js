@@ -28,15 +28,7 @@ let redAnimation =  anime({
     loop: true
 });
 
-let redPiece2Animation = anime({
-  targets: '.redpiece2',
-  keyframes: [
-      {translateX: '-0.3vw'},
-      {translateX: '0vw'},
-    ],
-    duration: 2000,
-    loop: true
-});
+
 //
 // document.querySelector('.redpiece2 path').onclick = function() {
 //   document.querySelector('.redpiece2 path').style.fill = 'white'
@@ -188,6 +180,15 @@ document.querySelector('.yellowpiece path').onmouseenter = function() {
 document.querySelector('.yellowpiece2 path').onmouseenter = function() {
   document.querySelector('.yellowpiece2 path').style.display = `none`
 }
+
+document.querySelector('.war path').onmouseenter = function() {
+  document.querySelector('.war path').style.stroke = `white`
+}
+
+document.querySelector('.war path').onmouseleave = function() {
+  document.querySelector('.war path').style.stroke = `black`
+}
+
 
 
 
