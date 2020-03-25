@@ -614,5 +614,14 @@ h1:hover {
     top: 35vw;
   }
 
+  .bluepieces {
+    top: 10vw;
+    height: 100vh;
+  }
+
+  .yellowpieces {
+    top: 0vw;
+    height: 100vh;
+  }
 
 }
