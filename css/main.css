@@ -5,6 +5,9 @@ body {
   overflow: hidden;
   margin: 0;
 
+  transition: all 300ms ease;
+
+
 }
 
 
@@ -27,14 +30,14 @@ body {
 h1 {
   font-family: 'Gotham Pro';
   color: #FFFFFF;
-  font-size: 30px;
-  line-height: 29px;
+  font-size: 20px;
+  line-height: 19px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   z-index: 1;
-  margin-right: 4vw;
-  margin-top: 3vw;
+  margin-right: 8vw;
+  margin-top: 7vw;
   user-select: none;
   text-align: right;
 
@@ -46,68 +49,72 @@ h1:hover {
 } */
 
 .purple {
-  width: 40vw;
+  width: 60vw;
   position: absolute;
-  margin-top: -6vw;
+  margin-top: -30vw;
   left: -8vw;
 }
 
 .red {
-  width: 60vw;
+  width: 70vw;
   position: absolute;
   right: -8vw;
-  top: 0vw;
+  top: -70vw;
 }
 
 .redpiece {
-  width: 60vw;
+  width: 80vw;
   position: absolute;
-  top: 0vw;
+  top: -10vw;
 }
 
 .redpiece2 {
-  width: 25vw;
+  width: 40vw;
   position: absolute;
-  top: 5vw;
+  top: -5vw;
   right: 15vw;
 }
 
 .purplepiece {
-  width: 25vw;
+  width: 50vw;
   position: absolute;
   bottom: 0vw;
   left: 2vw;
 }
 
 .purplepiece2 {
-  width: 25vw;
+  width: 50vw;
   position: absolute;
-  bottom: 0vw;
+  bottom: -20vw;
   right: 2vw;
 }
 
 .severalpieces {
-  width: 100vw;
-  height: 120vh;
+  width: 160vw;
+  height: 140vh;
   z-index: 1;
   position: absolute;
-  margin-top: -10vw;
+  top: -25vw;
+  left: -15vw;
+  transform: rotate(90deg);
 }
 
 .bluepieces {
   position: absolute;
   z-index: 1;
-  width: 100vw;
-  top: -2vw;
+  width: 140vw;
+  top: -10vw;
   left: -2vw;
+  transform: rotate(90deg);
 }
 
 .yellowpieces {
   position: absolute;
   z-index: 1;
-  width: 70vw;
-  top: 0vw;
+  width: 100vw;
+  top: -20vw;
   right: -2vw;
+  transform: rotate(90deg);
 }
 
 .spider {
@@ -179,23 +186,23 @@ h1:hover {
 
 .fear {
   position: absolute;
-  width: 45vw;
+  width: 60vw;
   z-index: 1;
-  top: 2vw;
-  left: 12vw;
+  top: -15vw;
+  left: 10vw;
 }
 
 .dontwant2 {
   position: absolute;
   width: 45vw;
   z-index: 1;
-  top: 25vw;
-  right: 23vw;
+  top: 70vw;
+  right: 10vw;
 }
 
 .sticker1 {
   position: absolute;
-  width: 40vw;
+  width: 60vw;
   top: -8vw;
 
   touch-action: none;
@@ -205,7 +212,7 @@ h1:hover {
 
 .sticker2 {
   position: absolute;
-  width: 45vw;
+  width: 65vw;
   left: 20vw;
 
   touch-action: none;
@@ -214,7 +221,7 @@ h1:hover {
 
 .sticker3 {
   position: absolute;
-  width: 45vw;
+  width: 65vw;
   bottom: -10vw;
 
   touch-action: none;
@@ -225,16 +232,16 @@ h1:hover {
 .notafraid {
   position: absolute;
   z-index: 1;
-  width: 45vw;
+  width: 70vw;
   top: 13vw;
   left: 20vw;
 }
 
 .purplepiece4 {
   position: absolute;
-  width: 40vw;
+  width: 50vw;
   z-index: 1;
-  top: 20vw;
+  top: 40vw;
   right: -5vw;
 }
 
@@ -247,20 +254,18 @@ h1:hover {
 }
 
 .wrinkle {
-  background: url(../img/wrinklepaper.png);
+  /* background: url(../img/wrinklepaper.png); */
   background-repeat: no-repeat;
   position: absolute;
   z-index: 1;
   top: -10vw;
-  right: 10vw;
-  width: 50vw;
-  height: 50vw;
-  transition: all 1000ms ease;
+  right: 5vw;
+  width: 160%;
+  height: 100%;
 }
-
+/*
 .wrinkle img {
   visibility: hidden;
-  /* transition: all 1000ms ease; */
 
 }
 
@@ -270,28 +275,28 @@ h1:hover {
 
 .wrinkle:hover img {
   visibility: visible;
-}
+} */
 
 .wrinklepaper {
-  width: 45vw;
+  width: 87vw;
   position: absolute;
-  top: 2vw;
-  left: 2vw;
+  top: 16vw;
+  left: 65vw;
 }
 
 .torn {
-  background: url(../img/tornpaper.png);
+  /* background: url(../img/tornpaper.png); */
   background-repeat: no-repeat;
   position: absolute;
   z-index: 1;
   bottom: -20vw;
   right: 20vw;
-  width: 500px;
-  height: 500px;
+  width: 40%;
+  height: 100%;
   transform: rotate(45deg);
 }
 
-.torn img {
+/* .torn img {
   visibility: hidden;
 }
 
@@ -301,13 +306,307 @@ h1:hover {
 
 .torn:hover img {
   visibility: visible;
-}
+} */
 
 .tornpaper {
-  width: 30vw;
+  width: 60vw;
   position: absolute;
-  bottom: 15vw;
-  right: 5vw;
+  bottom: 46vw;
+  right: -29vw;
+}
+
+
+@media (min-width: 1024px) {
+
+  h1 {
+    font-family: 'Gotham Pro';
+    color: #FFFFFF;
+    font-size: 30px;
+    line-height: 29px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 1;
+    margin-right: 4vw;
+    margin-top: 3vw;
+    user-select: none;
+    text-align: right;
+
+  }
+  /*
+  h1:hover {
+    color: #FF4B41;
+    animation:
+  } */
+
+  .purple {
+    width: 40vw;
+    position: absolute;
+    margin-top: -6vw;
+    left: -8vw;
+  }
+
+  .red {
+    width: 60vw;
+    position: absolute;
+    right: -8vw;
+    top: 0vw;
+  }
+
+  .redpiece {
+    width: 60vw;
+    position: absolute;
+    top: 0vw;
+  }
+
+  .redpiece2 {
+    width: 25vw;
+    position: absolute;
+    top: 5vw;
+    right: 15vw;
+  }
+
+  .purplepiece {
+    width: 25vw;
+    position: absolute;
+    bottom: 0vw;
+    left: 2vw;
+  }
+
+  .purplepiece2 {
+    width: 25vw;
+    position: absolute;
+    bottom: 0vw;
+    right: 2vw;
+  }
+
+  .severalpieces {
+    width: 100vw;
+    height: 120vh;
+    z-index: 1;
+    position: absolute;
+    top: -3vw;
+    left: 0vw;
+    transform: rotate(0deg);
+  }
+
+  .bluepieces {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    top: -2vw;
+    left: -2vw;
+    transform: rotate(-90deg);
+  }
+
+  .yellowpieces {
+    position: absolute;
+    z-index: 1;
+    width: 70vw;
+    top: 0vw;
+    right: -2vw;
+    transform: rotate(-90deg);
+  }
+
+  .spider {
+    position: absolute;
+    width: 46vw;
+    z-index: 1;
+    top: -2vw;
+  }
+
+  .bluepiece {
+    width: 60vw;
+    position: absolute;
+    top: 0vw;
+    left: -25vw;
+  }
+
+  .redpiece3 {
+    width: 70vw;
+    position: absolute;
+    top: 5vw;
+    left: 5vw;
+  }
+
+  .yellowpiece {
+    width: 60vw;
+    position: absolute;
+    top: 35vw;
+    left: -10vw;
+  }
+
+  .yellowpiece2 {
+    width: 60vw;
+    position: absolute;
+    top: 10vw;
+    right: -10vw;
+  }
+
+  .purplepiece3 {
+    width: 70vw;
+    position: absolute;
+    bottom: -6vw;
+    right: 10vw;
+  }
+
+  .snake {
+    position: absolute;
+    width: 40vw;
+    z-index: 1;
+    bottom: -2vw;
+    right: -4vw;
+  }
+
+  .field {
+    position: absolute;
+    width: 44vw;
+    z-index: 1;
+    bottom: 0vw;
+    left: -4vw;
+  }
+
+
+  .dontwant {
+    position: absolute;
+    width: 25vw;
+    z-index: 1;
+    bottom: -2vw;
+    right: 20vw;
+  }
+
+  .fear {
+    position: absolute;
+    width: 45vw;
+    z-index: 1;
+    top: 2vw;
+    left: 12vw;
+  }
+
+  .dontwant2 {
+    position: absolute;
+    width: 45vw;
+    z-index: 1;
+    top: 25vw;
+    right: 23vw;
+  }
+
+  .sticker1 {
+    position: absolute;
+    width: 40vw;
+    top: -8vw;
+
+    touch-action: none;
+    user-select: none;
+  }
+
+
+  .sticker2 {
+    position: absolute;
+    width: 45vw;
+    left: 20vw;
+
+    touch-action: none;
+    user-select: none;
+  }
+
+  .sticker3 {
+    position: absolute;
+    width: 45vw;
+    bottom: -10vw;
+
+    touch-action: none;
+    user-select: none;
+  }
+
+
+  .notafraid {
+    position: absolute;
+    z-index: 1;
+    width: 45vw;
+    top: 13vw;
+    left: 20vw;
+  }
+
+  .purplepiece4 {
+    position: absolute;
+    width: 40vw;
+    z-index: 1;
+    top: 20vw;
+    right: -5vw;
+  }
+
+  .war {
+    position: absolute;
+    width: 45vw;
+    z-index: 1;
+    top: 25vw;
+    right: 23vw;
+  }
+
+  .wrinkle {
+    background: url(../img/wrinklepaper.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    top: -10vw;
+    right: 10vw;
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .wrinkle img {
+    visibility: hidden;
+    /* transition: all 1000ms ease; */
+
+  }
+
+  .wrinkle:hover {
+    background: none;
+  }
+
+  .wrinkle:hover img {
+    visibility: visible;
+  }
+
+  .wrinklepaper {
+    width: 45vw;
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+  }
+
+  .torn {
+    background: url(../img/tornpaper.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    bottom: -20vw;
+    right: 20vw;
+    width: 500px;
+    height: 500px;
+    transform: rotate(45deg);
+  }
+
+  .torn img {
+    visibility: hidden;
+  }
+
+  .torn:hover {
+    background: none;
+  }
+
+  .torn:hover img {
+    visibility: visible;
+  }
+
+  .tornpaper {
+    width: 30vw;
+    position: absolute;
+    bottom: 15vw;
+    right: 5vw;
+  }
+
 }
 
 

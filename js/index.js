@@ -170,6 +170,7 @@ let warAnimation = anime({
 
 document.querySelector('.bluepiece path').onmouseenter = function() {
   document.querySelector('.bluepiece path').style.display = `none`
+
 }
 document.querySelector('.redpiece3 path').onmouseenter = function() {
   document.querySelector('.redpiece3 path').style.display = `none`
@@ -188,26 +189,8 @@ document.querySelector('.war path').onmouseenter = function() {
 document.querySelector('.war path').onmouseleave = function() {
   document.querySelector('.war path').style.stroke = `black`
 }
-
-
-
-
-
-
 //
-// const position = { x: 0, y: 0 }
-//
-// let dragFunction = interact('.purplepiece2').draggable({
-//   listeners: {
-//     start (event) {
-//       console.log(event.type, event.target)
-//     },
-//     move (event) {
-//       position.x += event.dx
-//       position.y += event.dy
-//
-//       event.target.style.transform =
-//         `translate(${position.x}px, ${position.y}px)`
-//     },
-//   }
-// })
+// document.querySelector('body').onmouseenter = function() {
+//   document.querySelector('body').style.background = `rgb(${anime.random(0,255)},${anime.random(0,255)},${anime.random(0,255)})`
+//   document.querySelector('body').style.transition = `all 1500ms ease`
+// }
