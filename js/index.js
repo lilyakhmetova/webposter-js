@@ -156,6 +156,16 @@ let notAfraidAnimation = anime({
   loop: true
 });
 
+let unpleasantAnimation = anime({
+  targets: '.unpleasant path',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 5000,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true
+});
+
 let warAnimation = anime({
   targets: '.war path',
   strokeDashoffset: [anime.setDashoffset, 1000],

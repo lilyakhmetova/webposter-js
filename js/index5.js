@@ -61,6 +61,10 @@ document.querySelector('.purplepiece4 path').onmouseleave = function() {
 document.querySelector('.notafraid').style.transform = `translate(${anime.random(1,100)}vw, ${anime.random(1,100)}vh)`
 document.querySelector('.notafraid').style.transform = `rotate(${anime.random(1,360)}deg`
 
+
+document.querySelector('.unpleasant').style.transform = `translate(${anime.random(1,100)}vw, ${anime.random(1,100)}vh)`
+document.querySelector('.unpleasant').style.transform = `rotate(${anime.random(1,360)}deg`
+
 let purplePiece4Animation = anime({
   targets: '.purplepiece4',
   keyframes: [

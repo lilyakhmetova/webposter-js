@@ -4,12 +4,8 @@ body {
   background: black;
   overflow: hidden;
   margin: 0;
-
   transition: all 300ms ease;
-
-
 }
-
 
 @font-face {
  font-family: 'Gotham Pro';
@@ -229,7 +225,8 @@ h1:hover {
 }
 
 
-.notafraid {
+.notafraid,
+.unpleasant {
   position: absolute;
   z-index: 1;
   width: 70vw;
